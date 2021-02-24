@@ -1,0 +1,86 @@
+@import url('https://fonts.google.com/specimen/Roboto?preview.text_type=custom&selection.family=Roboto:ital,wght@0,100;0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,900&display=swap');
+@font-face{
+    font-family: "monterra";
+    src: url(/fonts/);
+}
+*{
+    margin: 0;
+    padding: 0;
+   
+    box-sizing: border-box;
+    
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.header,.main{
+    width: 100vw;
+    height: 100vh;
+}
+.header{
+    padding-left: 2vw;
+    padding-right: 4vw;
+    background-color: #db4b50;
+    height: 80px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-home{
+    width: 100.95;
+    height: 100.00px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.header nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.header nav ul li{
+    list-style: none;
+}
+.header nav ul li a{
+    color:#ffffff;
+    text-decoration: none;
+    padding: 1em;
+}
+.header nav ul li a:hover{
+   border-bottom:2px solid#db4b50;
+}
+.main{
+    background-image: url(/images/hero-background.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+.main .banner-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main .banner-container .bg-title h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 1.5em;
+}
+.main .banner-container .bg-title h1 span {
+    color: #ffe64d;
+}
+.main .banner-container .bg-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin:1em;
+}
