@@ -12,8 +12,10 @@ a{
    
 }
 html,body{
-    font-size: 16px;
+    background-color: #f1f0f3;
+    font-size: 17px;
     font-family: 'Roboto', sans-serif;
+
 }
 .header,.main{
     width: 100vw;
@@ -83,6 +85,7 @@ html,body{
     padding: 0.5rem 1rem;
     
 }
+
 /** ---- Les margin, paddings generiques et les textes */
 .mr-1{
     margin-right: 1rem;
@@ -90,7 +93,9 @@ html,body{
 .mt-6{
     margin-top: 6rem;
 }
-
+.ml-1{
+    margin-left: 1.1rem;
+}
 .text-center{
     text-align: center;
 }
@@ -214,6 +219,7 @@ html,body{
     height: auto;
 }
 .main .container-fluid-b{
+    
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
@@ -231,6 +237,13 @@ html,body{
     flex-flow: row wrap;
     justify-content: flex-end;
     align-items: flex-start;
+}
+.title-dev{
+    color: #424345;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 48px;
 }
 .img{
     border-radius: 20px;
@@ -260,8 +273,8 @@ html,body{
    align-items: center;
 }
 .kda-flex img{
-    width: 92px;
-    height:98px;
+    width: 50px;
+    height:90px;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
