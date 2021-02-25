@@ -134,11 +134,73 @@ html,body{
 .mr-2{
     margin-right: 2.5rem;
 }
+.mr-3{
+    margin-right: 3.5rem;
+}
+.mr-6{
+    margin-right: 6.5rem;
+}
 .ml-1{
     margin-left: 0.8rem;
 }
+.ml-3{
+    margin-left: 3.5rem;
+}
+.ml-6{
+    margin-left: 6.5rem;
+}
+
 .mlx-1{
     margin-left: 0.3rem;
+}
+.p-1{
+    padding: 1.5rem;
+}
+.p-3{
+    padding: 3rem;
+}
+.p-6{
+    padding: 6rem;
+}
+.pt-1{
+    padding-top: 1.5rem;
+}
+.pt-3{
+    padding-top: 3rem;
+}
+.pt-6{
+    padding-top: 6rem;
+}
+.pb-1{
+    padding-bottom: 1.5rem;
+}
+.pb-3{
+    padding-bottom: 3rem;
+}
+.pb-6{
+    padding-bottom: 6rem;
+}
+.pr-1{
+    padding-right: 1.5rem;
+}
+.pr-2{
+    padding-right: 2.5rem;
+}
+.pr-6{
+    padding-right: 6.5rem;
+}
+.pl-1{
+    padding-left: 0.8rem;
+}
+.pl-3{
+    margin-left: 3.5rem;
+}
+.pl-6{
+    padding-left: 6.5rem;
+}
+
+.plx-1{
+    padding-left: 0.3rem;
 }
 .text-center{
     text-align: center;
@@ -155,6 +217,9 @@ html,body{
 }
 .text-dark{
     color: #424345;
+}
+.text-danger{
+    color:#db4b50 ;
 }
 .title-section{
     font-family: 'Montserrat', sans-serif;
@@ -382,7 +447,51 @@ html,body{
 .call{
     background-color: #ae3e53;
     color: white;
-}.media-section{
+}
+.emploi-section{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+}
+.emploi-one,.card-emploi{
+    width: 50%;
+}
+.students{
+    width: 550px;
+    height: 230px;
+  
+}
+.card{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+}
+.card div{
+    width: 50%;
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+.card img{
+    width: 50px;
+    height: 50px;
+}
+.card-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #424345;
+    margin-top: 0.3rem;
+}
+.card-text{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #424345;
+    margin-bottom: 5rem;
+    margin-top: 00.5rem;
+}
+.media-section{
     background-color: #111111;
 }
 .media-section .medias{
