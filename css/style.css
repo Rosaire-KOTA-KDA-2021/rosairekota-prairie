@@ -61,7 +61,17 @@ html,body{
     border-radius: 15px;
 }
 .btn-lg-danger{
-    background-color:#db4b50 ;
+    background-color:#e95051;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 1.2rem 1.5rem;
+    border: none;
+    border-radius: 15px;
+   
+}
+.btn-lg-danger:hover{
+    background-color:#ae3e53;
     color: #ffffff;
     font-weight: bold;
     font-size: 20px;
@@ -201,6 +211,11 @@ html,body{
 
 .plx-1{
     padding-left: 0.3rem;
+}
+.call-title{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    font-size: 48px;
 }
 .text-center{
     text-align: center;
@@ -444,9 +459,57 @@ html,body{
     justify-content: space-evenly;
     align-items: center;
 }
-.call{
+
+/*.call-section{
     background-color: #ae3e53;
     color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+}*/
+.call-section{
+    background-color: #ae3e53;
+    color: white;
+}
+.call{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.btn-call{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+.img-call-flex{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.img-call-flex .img-f{
+        border: 1px solid white;
+        border-radius: 10px;
+        width: 70px;
+        height: 71px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+}
+.img-call-flex img{
+    width: 35px;
+}
+.call-text p{
+    margin-top: 1rem;
+    margin-right: 5rem;
+}
+.Onboarding{
+    position: relative;
+    left: 2.5rem;
 }
 .emploi-section{
     display: flex;
