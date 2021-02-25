@@ -43,7 +43,7 @@ html,body{
     font-weight: bold;
     font-size: 20px;
     padding: 1.2rem 1.5rem;
-    border: 3px solid #ffffff;
+    border: 2px solid #ffffff;
     border-radius: 15px;
    
 }
@@ -143,8 +143,8 @@ html,body{
     padding: 1em;
 }
 .header nav ul li a:hover{
-   border-bottom:10px solid#131212;
-   width: 1rem;
+   border-bottom:5px solid#db4b50;;
+   width: 0.2rem;
 }
 /** Dans cette section classe main est parent de tous */
 .main{
@@ -194,7 +194,7 @@ html,body{
 .main .btn-text .bg-btn a:hover{
     background-color: transparent;
     color:#ffffff ;
-    border: 3px solid #ffffff;
+    border: 2px solid #ffffff;
     
   
 }
@@ -218,11 +218,12 @@ html,body{
     width: 50px;
     height: auto;
 }
-.main .container-fluid-b{
+.kda{
     
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     justify-content: flex-start;
+   
     
 }
 .flex-kda-present{
@@ -237,6 +238,12 @@ html,body{
     flex-flow: row wrap;
     justify-content: flex-end;
     align-items: flex-start;
+}
+.kda-dev{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+  
 }
 .title-dev{
     color: #424345;
