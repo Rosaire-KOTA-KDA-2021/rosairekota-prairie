@@ -459,15 +459,69 @@ html,body{
     justify-content: space-evenly;
     align-items: center;
 }
-
-/*.call-section{
-    background-color: #ae3e53;
-    color: white;
+.expertises-section{
+    background-color: white;
+}
+.expertise{
     display: flex;
-    flex-flow: column;
-    justify-content: flex-start;
+    flex-flow: row;
+    justify-content: space-evenly;
     align-items: center;
-}*/
+}
+.expertise .hardkills{
+    background-color: #f1f0f3;
+    width: 45%;
+    max-width: 100%;
+    height: 450px;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+.kills-title-global{
+    height: 4.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 1rem;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 48px;
+    
+}
+.hardkills-title{
+    background-color: #db4b50;
+}
+.expertise .softkills{
+    background-color: #f1f0f3;
+    width: 35%;
+    max-width: 100%;
+    height: 450px;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+   
+}
+.softkills .softkills-title{
+    background-color: #331f40;
+    
+}
+.soft-kills-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+.soft-content{
+    background-color: #dfdee1;
+    width: 80%;
+    height: 280px;
+}
+.soft-content ol{
+    margin-top: 2rem;
+
+
+}
 .call-section{
     background-color: #ae3e53;
     color: white;
