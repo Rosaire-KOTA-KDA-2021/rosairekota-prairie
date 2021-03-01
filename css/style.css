@@ -1,27 +1,13 @@
+/** 
+ -------------------Initialisation-----------------
 
-@font-face
-{
-    font-family: 'Roboto_light';
-    src: url('../fonts/Roboto/Roboto-Light.ttf');
-    font-weight: 100;
-}
-@font-face
-{
-    font-family: 'Roboto';
-    src: url('../fonts/Roboto/Roboto-Regular.ttf');
-    font-weight: 400;
-}
-@font-face
-{
-    font-family: 'Montserrat';
-    src: url('../fonts/Montserrat-700/Montserrat-Black.ttf');
-    font-weight: 700;
-}
-@font-face
-{
-    font-family: 'Montserrat_900';
-    src: url('../fonts/Montserrat-900/Montserrat-Bold.ttf');
-    font-weight: 900;
+*/
+:root{
+    --bg-color:#db4b50;
+    --color-danger:#e95051;
+    --color-white:#ffff;
+    --btn-danger:#db4b50;
+    --violet:#392546;
 }
 
 *{
@@ -32,8 +18,14 @@
 }
 a{
     text-decoration: none;
+    color: var(--color-white);
    
 }
+
+/** 
+ -------------------Debut-----------------
+
+*/
 html,body{
     background-color: #f1f0f3;
     font-size: 16px;
@@ -44,76 +36,77 @@ html,body{
     width: 100vw;
 }
 
-/** 2) ----Utlitaires ------- */
+/**
+  ------ ----Mes Utlitaires --------------------------
+ */
 
 .bg-white{
-    background-color:#faf5f5 ;
+    background-color:var(--color-white);
 }
 
 /** la classe bouton= btn **/
 .btn{
     background-color: #0c0303;
-    color:#faf5f5 ;
+    color:var(--color-white);
     font-weight: bold;
     font-size: 1rem;
     padding: 0.2rem 0.5rem;
-    border: 1px solid #ffffff;
+    border: 1px solid var(--color-white);
     border-radius: 15px;
 }
 .btn-lg-danger{
-    background-color:#e95051;
-    color: #ffffff;
+    background-color:var(--btn-danger);
+    color: var(--color-white);
     font-weight: bold;
     font-size: 20px;
     padding: 1.2rem 1.5rem;
     border: none;
     border-radius: 15px;
+    border: 2px solid var(--color-white);
    
 }
 .btn-lg-danger:hover{
-    background-color:#ae3e53;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 20px;
-    padding: 1.2rem 1.5rem;
-    border: 2px solid #ffffff;
-    border-radius: 15px;
+    /*background-color:#ae3e53;*/
+    background-color:var(--color-white);
+    color: var(--btn-danger);
+    border: 2px solid var(--btn-danger);
+   
    
 }
 .btn-md-danger{
-    background-color:#db4b50 ;
-    color: #ffffff;
+    background-color:var(--color-danger); ;
+    color: var(--color-white);
     font-size: 1rem;
     padding: 1.5rem 1.5rem;
     
 }
 .btn-sm-danger{
-    background-color:#db4b50 ;
-    color: #ffffff;
+    background-color:var(--color-danger); ;
+    color: var(--color-white);
     font-size: 1rem;
     padding: 0.5rem 1rem;
     
 }
 .btn-lg-white{
-    background-color: #ffffff;
-    color:#db4b50 ;
+    background-color: var(--color-white);
+    color:var(--color-danger); ;
     font-weight: bold;
     font-size: 20px;
     padding: 1.2rem 1.5rem;
-    border: 3px solid #ffffff;
+    border: 3px solid var(--color-white);
     border-radius: 15px;
    
 }
 .btn-md-white{
-    background-color: #ffffff;
-    color:#db4b50 ;
+    background-color: var(--color-white);
+    color:var(--color-danger); ;
     font-size: 1rem;
     padding: 1.5rem 1.5rem;
     
 }
 .btn-sm-white{
-    background-color: #ffffff;
-    color:#db4b50 ;
+    background-color: var(--color-white);
+    color:var(--color-danger); ;
     font-size: 1rem;
     padding: 0.5rem 1rem;
     
@@ -124,6 +117,9 @@ html,body{
     margin-top: 1.5rem;
 }
 .mt-3{
+    margin-top: 2.5rem;
+}
+.mt-3{
     margin-top: 3rem;
 }
 .mt-6{
@@ -131,6 +127,9 @@ html,body{
 }
 .mb-1{
     margin-bottom: 1.5rem;
+}
+.mt-2{
+    margin-bottom: 3rem;
 }
 .mb-3{
     margin-bottom: 3rem;
@@ -221,7 +220,7 @@ html,body{
     text-align: center;
 }
 .text-white{
-    color:#ffffff;
+    color:var(--color-white);
 }
 .text-lg{
     font-size: 30px;
@@ -234,21 +233,29 @@ html,body{
     color: #424345;
 }
 .text-danger{
-    color:#db4b50 ;
+    color:var(--color-danger); ;
+}
+.text-vlt{
+    color: var(--violet);
 }
 .title-section{
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
-    line-height: 48px;
-    font-weight: lighter;
+    font-weight: 400;
     
 }
-/*-----------End------*/
-/** Dans cette section classe .hearder est parent de tous */
+/*-----------End (Initiaisation, Utilitaires,..)---------*/
+
+
+/** 
+ -------------------Debut du corps css -----------------
+
+*/
+/**-------------hearder------------------ */
 .header{
     padding-left: 2vw;
     padding-right: 4vw;
-    background-color: #db4b50;
+    background-color: var(--bg-color);
     height: 80px;
     font-weight: bold;
     display: flex;
@@ -279,10 +286,11 @@ html,body{
     padding: 1em;
 }
 .header nav ul li a:hover{
-   border-bottom:5px solid#db4b50;;
+   border-bottom:5px solid var(--bg-color);;
    width: 0.2rem;
 }
-/** Dans cette section classe main est parent de tous */
+
+/** --------------------main -------------------- */
 .main{
     display: flex;
     flex-flow: column wrap;
@@ -329,8 +337,8 @@ html,body{
 
 .main .btn-text .bg-btn a:hover{
     background-color: transparent;
-    color:#ffffff ;
-    border: 2px solid #ffffff;
+    color:var(--color-white);
+    border: 2px solid var(--color-white);
     
   
 }
@@ -377,11 +385,7 @@ html,body{
     justify-content: flex-end;
     align-items: flex-start;
 }
-/*.kda-dev{
-    border: 5px solid #db4b50;
-  
-}
-*/
+
 .title-dev{
     color: #424345;
     font-family: 'Montserrat', sans-serif;
@@ -423,7 +427,7 @@ html,body{
     margin-bottom: 2rem;
 }
 .partenaires,.works{
-     background-color: #db4b50;;
+     background-color: var(--bg-color);
 }
 .partenaires .bg-parteners{
     height: 30%;
@@ -441,26 +445,57 @@ html,body{
     height: auto;
 }
 .accompagnement{
-    background-color: #d3c9ca;
+    /*background-color: #d3c9ca;*/
+    max-width: auto;
 }
-.projets{
+.project-content{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-evenly;
     align-items: center;
+    margin-bottom: 5rem;
+    padding: 4rem;
 }
-.projet{
-    border: 5px solid red;
-    border-radius: 8px;
+.projets,.project{
+    display: flex;
+    flex-flow: column;
+    justify-content:space-between;
+    align-items: center;
+    border-top: 10px solid #ffe64d;
+    height: 18rem;
+    width: 35rem;
+    border-radius: 15px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.project{
+    border-top: 10px solid var(--color-danger);
 }
 .codings{
     display: flex;
     flex-flow:  row wrap;
     justify-content: space-evenly;
     align-items: center;
+    color: var(--color-white);
+    font-size: 12px;
+}
+.codings div>img{
+    border-radius: 1rem;
+    height: 25.4rem;
+    width: 20rem;
+}
+.code-reactN{
+    width: 20px;
+    height: 20px;
+}
+.techno-work{
+    background-color: #e95159;
+    box-shadow: 2px 2px 4px #e95159;
+    padding: 0.3rem;
+    
 }
 .expertises-section{
-    background-color: white;
+    background-color: var(--color-white);;
 }
 .expertise{
     display: flex;
@@ -483,7 +518,7 @@ html,body{
     justify-content: center;
     align-items: flex-start;
     padding-left: 1rem;
-    color: white;
+    color: var(--color-white);
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 20px;
@@ -491,7 +526,19 @@ html,body{
     
 }
 .hardkills-title{
-    background-color: #db4b50;
+    background-color: var(--bg-color);;
+}
+.hardkills-techno-content{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.hardkills-techno-content img{
+   width: 3rem;
+   max-width:auto;
+   height: 3rem;
+    
 }
 .expertise .softkills{
     background-color: #f1f0f3;
@@ -508,23 +555,30 @@ html,body{
 }
 .soft-kills-content{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+   
 }
+
 .soft-content{
     background-color: #dfdee1;
-    width: 80%;
-    height: 280px;
-}
-.soft-content ol{
+    width: 350px;
+    height: 300px;
     margin-top: 2rem;
-
-
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px #dfdee1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 2rem;
+    
 }
+
 .call-section{
     background-color: #ae3e53;
-    color: white;
+    color: var(--color-white);
 }
 .call{
     display: flex;
@@ -545,7 +599,7 @@ html,body{
     align-items: center;
 }
 .img-call-flex .img-f{
-        border: 1px solid white;
+        border: 1px solid var(--color-white);
         border-radius: 10px;
         width: 70px;
         height: 71px;
@@ -585,7 +639,7 @@ html,body{
 }
 .card div{
     width: 50%;
-    background-color: #ffffff;
+    background-color: var(--color-white);
     border-radius: 15px;
 }
 .card img{
@@ -635,7 +689,7 @@ html,body{
     
 }
 .twitter{
-    background-color: #ffffff;
+    background-color: var(--color-white);
     padding: 3.2rem;
 }
 .twitter-present,.twitter-content{
@@ -655,9 +709,8 @@ html,body{
     padding: 0.3em;
 }
 
-/** -------------------Fin----------------------------------- */
 
 /** 
- footer
+ --------------------------footer---------------------------
 
 */

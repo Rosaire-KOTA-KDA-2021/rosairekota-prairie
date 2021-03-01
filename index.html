@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!---_________________________Header__________________________-->
     <header class="header">
         <div class="logo"><img src="images/logo_kinshasa_digital-white.png" alt="logo" class="logo-home"></div>
         <nav class="nav">
@@ -19,6 +22,9 @@
             </ul>
         </nav>
     </header>
+
+    <!---_________________________main__________________________-->
+
     <main class="main">
         <div class="banner">
             <section class="banner-container">
@@ -94,25 +100,39 @@
             </div>
         </section>
         <section class="accompagnement">
-            <h2 class="mt-6 text-center">Nous accompagnons vos projets</h2>
-            <div class="projets">
-                <div class="bg-white project">
-                    <h3 class="text-center"> > Réaliser votre projet</h3>
-                    <p class="text-center">Engagez une équipe de développeurs de Kinshasa Digital à <br> un prix fixe pour livrer un produit final.</p>
-                    <a href="#" class="btn btn-lg-danger text-upper">demarrer maintenant</a>
+            <h2 class="mt-3 text-center title-section text-vlt">Nous accompagnons vos projets</h2>
+             <div class="project-content">
+                <div class="bg-white projets">
+                    <div class="project-one">
+                        <h3 class="text-center title-project text-danger mb-2 mt-3"> &gt; Réaliser votre projet</h3>
+                        <p class="text-center pb-3 mt-1">Engagez une équipe de développeurs de Kinshasa Digital à <br> un prix fixe pour livrer un produit final.</p>
+                        <a href="#" class="btn btn-lg-danger text-upper ml-3">demarrer maintenant</a>
+                    </div>
                 </div>
-                <div class="bg-white project">
-                    <h3 class="text-center">> Integrer votre équipe</h3>
-                    <p class="text-center">Engagez un ou plusieurs développeurs de Kinshasa Digital à  <br> des prix compétitifs pour rejoindre votre équipe à distance.</p>
-                    <a href="#" class="btn btn-lg-danger text-upper">engager un developpeur</a>
-                </div>
-            </div>
+                  <div class="bg-white project">
+                    <div class="bg-white project-two">
+                        <h3 class="text-center mb-2 mt-3">&gt; Integrer votre équipe</h3>
+                        <p class="text-center pb-3 mt-1">Engagez un ou plusieurs développeurs de Kinshasa Digital à  <br> des prix compétitifs pour rejoindre votre équipe à distance.</p>
+                        <a href="#" class="btn btn-lg-danger text-upper mt-3 ml-3">engager un developpeur</a>
+                    </div>
+                  </div>
+             </div>
         </section>
         <section class="works">
-            <h2>Ce que nous avons développé</h2>
-            <div class="codings">
+            <h2 class="mt-6 call-title text-white text-center">Ce que nous avons développé</h2>
+            <div class="codings mb-3">
                 
-                    <div class="code_reactNative"><img src="images/works/ADS.png" alt="logo" class="code-reactN"></div>
+                    <div class="code_reactNative">
+                        <img src="images/works/ADS.png" alt="logo" class="code-reactN">
+                        <div class="work-text">
+                            <p> Client: Africa Digital Story<span></span></p>
+                            <p>https: <a href="https://www.aficadigitalstory.com">www.aficadigitalstory.com</a></p>
+                            <div class="techno-work">
+                                <img src="images/technos/react.png" alt="logo" class="code-reactN">
+                                <span>Reat native</span>
+                            </div>
+                        </div>
+                    </div>
                     <div class="code_vlaravel"><img src="images/works/covid-dashboard.png" alt="logo" class="code-vue-laravel"></div>
                     <div class="code_worpress"><img src="images/works/tandem.png" alt="logo" class="logo-vuejs"></div>    
                    
@@ -126,7 +146,60 @@
                         <h3 class=""> Hardskills</h3>
                     </div>
                     <div class="hardkills-techno">
-                         les technos ici
+                         <div class="hardkills-techno-content">
+                            <div>
+                                <img src="" alt="html.svg">
+                                <p class="text-upper">html</p>
+                           </div>
+                            <div>
+                                <img src="" alt="css">
+                                <p class="text-upper">css</p>
+                           </div>
+                            <div>
+                                <img src="" alt="php">
+                                <p class="text-upper">php</p>
+                           </div>
+                            <div>
+                                <img src="images/technos/laravel.png" alt="laravel">
+                                <p class="text-upper">laravel</p>
+                           </div>
+                         </div>
+                         <div class="hardkills-techno-content">
+                         <div>
+                             <img src="images/technos/nodejs.png" alt="nodejs">
+                             <p class="">Node.Js</p>
+                        </div>
+                         <div>
+                             <img src="images/technos/vuejs.png" alt="js">
+                             <p class="text-upper">JavaScrpt</p>
+                        </div>
+                         <div>
+                             <img src="images/technos/vuejs.png" alt="vuejs">
+                             <p class="text-upper">Vue.Js</p>   
+                        </div>
+                         <div>
+                             <img src="images/technos/react.png" alt="react">
+                             <p class="">React</p>
+                            </div>
+                         </div>
+                         <div class="hardkills-techno-content">
+                         <div>
+                             <img src="images/technos/mysql.png" alt="mysql">
+                             <p class="">MySQL</p>
+                        </div>
+                         <div>
+                             <img src="images/technos/mongodb.png" alt="mongoDB">
+                             <p class="text-upper">MongoDB</p>
+                        </div>
+                         <div>
+                             <img src="images/technos/neo4j.png" alt="neo4j">
+                             <p class="text-upper">neo4j</p>
+                        </div>
+                         <div>
+                             <img src="images/technos/graphql.png" alt="graphql">
+                             <p class="text-upper">GraphQL</p>
+                        </div>
+                         </div>
                     </div>
                 </div>
 
@@ -137,7 +210,7 @@
                     <div class="soft-kills-content">
                        <div class="soft-cont">
                         <ol class="soft-content">
-                            <li>Méthodologie agile (SCRUM)</li>
+                            <li>Méthodologie agile <span class="ml-2">(SCRUM)</span></li>
                             <li>Travail en équipe</li>
                             <li>Habitude du télé-travail</li>
                             <li>Gestion du temps</li>
@@ -153,8 +226,8 @@
             <div class="call mb-3">
                 <div>
                     <div class="img-call-flex">
-                        <p class="img-f"><img src="images/illustrations/call.png" alt="call.png"></p>
-                        <p><img src="images/illustrations/arrow.png" alt="arrow.png"></p>
+                        <div class="img-f"><img src="images/illustrations/call.png" alt="call.png"></div>
+                        <div><img src="images/illustrations/arrow.png" alt="arrow.png"></div>
                     </div>
                     <div class="call-text">
                         <p>Appel d’introduction</p>
@@ -196,7 +269,7 @@
             <div class="emploi-one ml-6">
                 <h3 class="mt-6 mb-3 title-section text-dark">Nous créons de l’<span class="text-danger">emploi de qualité </span>en République Démocratique du Congo</h3>
                 <p class="mb-1 card-text pr-1 text-emploi"> Nous sommes fiers de vous proposer un service de qualité qui permet de créer des emplois pour les talents de la RDC tout en offrant une formation d’excellence à de nouveaux jeunes développeurs chaque année</p>
-                 <p><img src="images/students.png" alt="students.png" class="students"></p>
+                 <p><img src="images/students.png" alt="students.png" class="students mr-2"></p>
             </div>
             <div class="mt-6 card-emploi mr-6">
                 <div class="card mb-1">
@@ -271,5 +344,6 @@
             </article>
         </section>
     </main>
+    <!---_________________________Footer__________________________-->
 </body>
 </html>
