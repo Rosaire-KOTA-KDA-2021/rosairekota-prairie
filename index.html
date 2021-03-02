@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/rkota-grid.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,10 +14,22 @@
         <div class="logo"><img src="images/logo_kinshasa_digital-white.png" alt="logo" class="logo-home"></div>
         <nav class="nav">
             <ul>
-                <li><a href="#" class="text-white">Accueil</a></li>
-                <li><a href="#" class="text-white ml-1">Academy</a></li>
-                <li><a href="#" class="text-white ml-1">Emploi</a></li>
-                <li><a href="#" class="text-white ml-1">Contact</a></li>
+                <li>
+                    <a href="#" class="text-white">Accueil</a>
+                    <span></span>
+                </li>
+                <li>
+                    <a href="#" class="text-white ml-1">Academy</a>
+                    <span></span>
+                </li>
+                <li>
+                    <a href="emploi.html" class="text-white ml-1">Emplois</a>
+                   <span></span>
+                </li>
+                <li>
+                    <a href="#" class="text-white ml-1">Contact</a>
+                    <span></span>
+                </li>
             </ul>
         </nav>
     </header>
@@ -62,25 +73,25 @@
                  </div>
              </div>
              <div class="kda-dev">
-                <div class="title-dev"> <h2 class="">Des développeurs &lt; qualifiés &gt; et prêts à intégrer vos équipes en remote !</h2></div>
+                <div class="title-section fontsize-27"> <h2 class="">Des développeurs &lt; qualifiés &gt; et prêts à intégrer vos équipes en remote !</h2></div>
                  <div class="kda-flex">
                      <div class="code">
-                         <p><img src="images/illustrations/paper.svg" alt="paper.svg"></p>
-                         <p>Des développeurs qualifiés</p>
+                         <img src="images/illustrations/paper.svg" alt="paper.svg">
+                         <h5>Des développeurs qualifiés</h5>
                      </div>
                      <div class="price">
-                        <p><img src="images/illustrations/cup.svg" alt="cup.svg"></p>
-                        <p>Des prix compétitifs</p>
+                        <img src="images/illustrations/cup.svg" alt="cup.svg">
+                        <h5>Des prix compétitifs</h5>
                     </div>
                  </div>
                  <div class="kda-flex">
                     <div class="lang">
-                        <p><img src="images/illustrations/chat.svg" alt="chat.svg"></p>
-                        <p>Le français est la langue maternelle</p>
+                        <img src="images/illustrations/chat.svg" alt="chat.svg">
+                        <h5>Le français est la langue maternelle</h5>
                     </div>
                     <div class="fusio">
-                       <p><img src="images/illustrations/earth.svg" alt="earth.svg"></p>
-                       <p>Sur le même fuseau horaire</p>
+                       <img src="images/illustrations/earth.svg" alt="earth.svg">
+                       <h5>Sur le même fuseau horaire</h5>
                    </div>
                 </div>
              </div>
@@ -88,7 +99,7 @@
        
         <section class="mt-6 partenaires">
             <h2 class="mt-6 mb-3 text-center title-section text-white">Nous avons le plaisir de travailler avec</h2>
-            <div class="bg-parteners">
+            <div class="bg-parteners mb-3">
                 <div class="ambassade_france"><img src="images/partners/embassade-france-white.png" alt="logo" class="logo-node"></div>
                 <div class="ministere_sante-white"><img src="images/partners/ministere_sante-white.png" alt="logo" class="logo-react"></div>
                 <div class="texaf-white"><img src="images/partners/texaf-white.png" alt="logo" class="logo-vuejs"></div>
@@ -100,130 +111,162 @@
             </div>
         </section>
         <section class="accompagnement">
-            <h2 class="mt-3 text-center title-section text-vlt">Nous accompagnons vos projets</h2>
+            <h2 class="mt-3 text-center title-section text-violet">Nous accompagnons vos projets</h2>
              <div class="project-content">
                 <div class="bg-white projets">
                     <div class="project-one">
-                        <h3 class="text-center title-project text-danger mb-2 mt-3"> &gt; Réaliser votre projet</h3>
-                        <p class="text-center pb-3 mt-1">Engagez une équipe de développeurs de Kinshasa Digital à <br> un prix fixe pour livrer un produit final.</p>
+                        <h3 class="text-center title-section fontsize-27 text-danger mb-2 mt-3"> &gt; Réaliser votre projet</h3>
+                        <p class="text-center pb-3 mt-1 font-montserra-light text-violet">Engagez une équipe de développeurs de Kinshasa Digital à <br> un prix fixe pour livrer un produit final.</p>
                         <a href="#" class="btn btn-lg-danger text-upper ml-3">demarrer maintenant</a>
                     </div>
                 </div>
                   <div class="bg-white project">
                     <div class="bg-white project-two">
-                        <h3 class="text-center mb-2 mt-3">&gt; Integrer votre équipe</h3>
-                        <p class="text-center pb-3 mt-1">Engagez un ou plusieurs développeurs de Kinshasa Digital à  <br> des prix compétitifs pour rejoindre votre équipe à distance.</p>
+                        <h3 class="text-center title-section fontsize-27 mb-2 mt-3 text-danger">&gt; Integrer votre équipe</h3>
+                        <p class="text-center pb-3 mt-1 font-montserra-light text-violet">Engagez un ou plusieurs développeurs de Kinshasa Digital à  <br> des prix compétitifs pour rejoindre votre équipe à distance.</p>
                         <a href="#" class="btn btn-lg-danger text-upper mt-3 ml-3">engager un developpeur</a>
                     </div>
                   </div>
              </div>
         </section>
         <section class="works">
-            <h2 class="mt-6 call-title text-white text-center">Ce que nous avons développé</h2>
-            <div class="codings mb-3">
+            <h2 class="mt-6 title-section text-white text-center">Ce que nous avons développé</h2>
+            <div class="codings mb-3 mt-3">
                 
                     <div class="code_reactNative">
                         <img src="images/works/ADS.png" alt="logo" class="code-reactN">
-                        <div class="work-text">
-                            <p> Client: Africa Digital Story<span></span></p>
+                        <div class="work-text mt-0-5">
+                            <div class="work-contries">
+                                <p> Client: Africa Digital Story</p><span class="work-contry"><img src="images/Fichiers_svg/svg_pays/rdc.svg" alt="">&nbsp; RDC</span>
+                            </div>
                             <p>https: <a href="https://www.aficadigitalstory.com">www.aficadigitalstory.com</a></p>
                             <div class="techno-work">
-                                <img src="images/technos/react.png" alt="logo" class="code-reactN">
+                                <img src="images/technos/" alt="logo" class="code-reactN">
                                 <span>Reat native</span>
                             </div>
                         </div>
                     </div>
-                    <div class="code_vlaravel"><img src="images/works/covid-dashboard.png" alt="logo" class="code-vue-laravel"></div>
-                    <div class="code_worpress"><img src="images/works/tandem.png" alt="logo" class="logo-vuejs"></div>    
+                    <div class="code_vlaravel">
+                        <img src="images/works/covid-dashboard.png" alt="logo" class="code-vue-laravel">
+                        <div class="work-text mt-0-5">
+                            <div class="work-contries">
+                                <p> Client: Ministère de la Santé</p><span class="work-contry"><img src="images/Fichiers_svg/svg_pays/suisse.svg" alt="">&nbsp; RDC</span>
+                            </div>
+                           
+                            <div class="techno-work">
+                                <img src="images/technos/" alt="logo" class="code-reactN">
+                                <span>Reat native</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="code_worpress">
+                        <img src="images/works/tandem.png" alt="logo" class="logo-vuejs">
+                        <div class="work-text mt-0-5">
+                            <div class="work-contries">
+                                <p> Client: Africa Digital Story</p><span class="work-contry"><img src="images/Fichiers_svg/svg_pays/rdc.svg" alt="">&nbsp; RDC</span>
+                            </div>
+                            <p>https: <a href="https://tandemadvertising.com/">www.tandemadvertising.com/</a></p>
+                            <div class="techno-work">
+                                <img src="images/Fichiers_svg/svg/" alt="logo" class="code-reactN">
+                                <span>Wordpress -&nbsp;(Custom theme)</span>
+                            </div>
+                        </div>
+                    </div>    
                    
             </div>
         </section>
-        <section class="expertises-section">
+        
+        <section class="container-fluid expertises-section">
             <h2 class="mt-3 mb-3 text-center title-section text-dark">Notre expertise</h2>
-            <div class="expertise mb-6">
-                <div class="hardkills">
-                    <div class="kills-title-global hardkills-title">
-                        <h3 class=""> Hardskills</h3>
-                    </div>
-                    <div class="hardkills-techno">
-                         <div class="hardkills-techno-content">
-                            <div>
-                                <img src="" alt="html.svg">
-                                <p class="text-upper">html</p>
-                           </div>
-                            <div>
-                                <img src="" alt="css">
-                                <p class="text-upper">css</p>
-                           </div>
-                            <div>
-                                <img src="" alt="php">
-                                <p class="text-upper">php</p>
-                           </div>
-                            <div>
-                                <img src="images/technos/laravel.png" alt="laravel">
-                                <p class="text-upper">laravel</p>
-                           </div>
-                         </div>
-                         <div class="hardkills-techno-content">
-                         <div>
-                             <img src="images/technos/nodejs.png" alt="nodejs">
-                             <p class="">Node.Js</p>
+            <div class="container row mb-6">
+                <div class="col-md-7">
+                    <div class="hardkills expertise">
+                        <div class="kills-title-global hardkills-title">
+                            <h3 class=""> Hardskills</h3>
                         </div>
-                         <div>
-                             <img src="images/technos/vuejs.png" alt="js">
-                             <p class="text-upper">JavaScrpt</p>
-                        </div>
-                         <div>
-                             <img src="images/technos/vuejs.png" alt="vuejs">
-                             <p class="text-upper">Vue.Js</p>   
-                        </div>
-                         <div>
-                             <img src="images/technos/react.png" alt="react">
-                             <p class="">React</p>
+                        <div class="hardkills-techno mt-3 font-ubuntu">
+                             <div class="hardkills-techno-content">
+                                <div class="hardkilsvg mr-1">
+                                    <img src="images/Fichiers_svg/svg/html5 (copy).svg" alt="html.svg"> 
+                                    <p class="text-upper">html</p>
+                               </div>
+                                <div class="mt-1">
+                                    <img src="images/Fichiers_svg/svg/css.svg" alt="css">
+                                    <p class="text-upper">css</p>
+                               </div>
+                                <div>
+                                    <img src="images/Fichiers_svg/svg/php.svg" alt="php">
+                                    <p class="text-upper">php</p>
+                               </div>
+                                <div>
+                                    <img src="images/Fichiers_svg/svg/laravel.svg" alt="laravel">
+                                    <p class="">Laravel</p>
+                               </div>
+                             </div>
+                             <div class="hardkills-techno-content mt-1">
+                             <div>
+                                 <img src="images/Fichiers_svg/svg/nodejs.svg" alt="nodejs">
+                                 <p class="">Node.Js</p>
                             </div>
-                         </div>
-                         <div class="hardkills-techno-content">
-                         <div>
-                             <img src="images/technos/mysql.png" alt="mysql">
-                             <p class="">MySQL</p>
+                             <div>
+                                 <img src="images/Fichiers_svg/svg/javascript.svg" alt="js">
+                                 <p class="">JavaScrpt</p>
+                            </div>
+                             <div>
+                                 <img src="images/Fichiers_svg/svg/vuejs.svg" alt="vuejs" class="vuejs mr-01">
+                                 <p class="">Vue.Js</p>   
+                            </div>
+                             <div class="mr-1">
+                                 <img src="images/Fichiers_svg/svg/reactjs.svg" alt="react">
+                                 <p class="">React</p>
+                                </div>
+                             </div>
+                             <div class="hardkills-techno-content mt-1">
+                             <div>
+                                 <img src="images/Fichiers_svg/svg/mysql.svg" alt="mysql">
+                                 <p class="">MySQL</p>
+                            </div>
+                             <div>
+                                 <img src="images/Fichiers_svg/svg/mongodb.svg" alt="mongoDB">
+                                 <p class="text-upper">MongoDB</p>
+                            </div>
+                             <div>
+                                 <img src="images/Fichiers_svg/svg/neo4j.svg" alt="neo4j">
+                                 <p class="text-upper">neo4j</p>
+                            </div>
+                             <div>
+                                 <img src="images/Fichiers_svg/svg/graphql.svg" alt="graphql">
+                                 <p class="text-upper">GraphQL</p>
+                            </div>
+                             </div>
                         </div>
-                         <div>
-                             <img src="images/technos/mongodb.png" alt="mongoDB">
-                             <p class="text-upper">MongoDB</p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="softkills">
+                        <div class="kills-title-global softkills-title">
+                            <h3 class="text-center">Soft Skills</h3>
                         </div>
-                         <div>
-                             <img src="images/technos/neo4j.png" alt="neo4j">
-                             <p class="text-upper">neo4j</p>
+                        <div class="soft-kills-content font-ubuntu">
+                           <div class="soft-cont">
+                            <ol class="soft-content">
+                                <li>Méthodologie agile <br>(SCRUM)</li>
+                                <li>Travail en équipe</li>
+                                <li>Habitude du télé-travail</li>
+                                <li>Gestion du temps</li>
+                                <li>Pair programming</li>
+                            </ol>
+                           </div>
                         </div>
-                         <div>
-                             <img src="images/technos/graphql.png" alt="graphql">
-                             <p class="text-upper">GraphQL</p>
-                        </div>
-                         </div>
                     </div>
                 </div>
 
-                <div class="softkills">
-                    <div class="kills-title-global softkills-title">
-                        <h3 class="text-center">Soft Skills</h3>
-                    </div>
-                    <div class="soft-kills-content">
-                       <div class="soft-cont">
-                        <ol class="soft-content">
-                            <li>Méthodologie agile <span class="ml-2">(SCRUM)</span></li>
-                            <li>Travail en équipe</li>
-                            <li>Habitude du télé-travail</li>
-                            <li>Gestion du temps</li>
-                            <li>Pair programming</li>
-                        </ol>
-                       </div>
-                    </div>
-                </div>
+               
             </div>
         </section>
         <section class="p-3 call-section">
             <h2 class="mt-6 mb-3 call-title text-white text-center">Prêt ?</h2>
-            <div class="call mb-3">
+            <div class="call mb-3 font-ubuntu call-paragraph">
                 <div>
                     <div class="img-call-flex">
                         <div class="img-f"><img src="images/illustrations/call.png" alt="call.png"></div>
@@ -262,7 +305,7 @@
                 </div>
             </div>
             <div class="btn-call mb-6 mt-6">
-                <span> <a href="#" class="btn btn-lg-danger text-upper">planifier un appel</a></span>
+                <span> <a href="#" class="btn btn-lg-danger text-upper btn-plan">planifier un appel</a></span>
             </div>
         </section>
         <section class="emploi-section">
@@ -343,7 +386,127 @@
                 </div>
             </article>
         </section>
+      <section class="form-section text-white">
+        <h2 class="mt-6 title-section form-title">Formulaire de contact</h2>
+        <p class="mt-3 form-sub-title">Si vous souhaitez-vous préinscrire à la Kinshasa Digital Academy veuillez remplir le <strong><a href="#" class="form-sub-title-strong">formulaire de préinscription</a></strong>.</p>
+        <form action="#">
+        <div class="container row mb-6">
+            <div class="col-md-6 col-lg-6">
+                <label for="" class="form-text">Quel titre vous décrit le mieux ? <br></label>
+                <select name="" id="" class="form-control mt-0-5">
+                   <option value="">Consultant</option>
+                   <option value="">Entrepreneur</option>
+                   <option value="">Etudiant</option>
+                   <option value="">Représentant d'une Start-Up</option>
+                   <option value="">Représentant d'une PME</option>
+                   <option value="">Représentant d'une Grande Entreprise</option>
+                   <option value="">Représentant d'une Grande ONG</option>
+                   <option value="">Autres</option>
+                </select>
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <label for="" class="form-text">Secteur d'activités <br></label>
+                <select name="" id="" class="form-control mt-0-5">
+                   <option value="">Consultant</option>
+                   <option value="">Entrepreneur</option>
+                   <option value="">Etudiant</option>
+                   <option value="">Représentant d'une Start-Up</option>
+                   <option value="">Représentant d'une PME</option>
+                   <option value="">Représentant d'une Grande Entreprise</option>
+                   <option value="">Représentant d'une Grande ONG</option>
+                   <option value="">Autres</option>
+                </select>
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <input type="text" class="form-control" placeholder="Prénom">
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Nom de l'Entreprise">
+            </div>
+            <div class="col-md-6">
+                <input type="text" name="" id="" class="form-control" placeholder="Nom">
+            </div>
+            <div class="col-md-6">
+                <input type="text" name="" id="" class="form-control" placeholder="Site Web">
+            </div>
+            <div class="col-md-6">
+                <input type="tel" class="form-control" placeholder="Télephone">
+            </div>
+            <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="Ville">
+            </div>
+            <div class="col-lg-6">
+                <input type="email" name="" id="" class="form-control" placeholder="Email">
+            </div>
+            <div class="col-md-12">
+                <label for="" class="form-text">Type de demande <br></label>
+                <select name="" id="" class="form-control mt-0-5">
+                   <option value="">Consultant</option>
+                   <option value="">Entrepreneur</option>
+                   <option value="">Etudiant</option>
+                   <option value="">Représentant d'une Start-Up</option>
+                   <option value="">Représentant d'une PME</option>
+                   <option value="">Représentant d'une Grande Entreprise</option>
+                   <option value="">Représentant d'une Grande ONG</option>
+                   <option value="">Autres</option>
+                </select>
+            </div>
+            <div class="col-md-12 col-sm-12">
+                <textarea name="" id="" cols="100" rows="5" placeholder="Demande : Merci d'indiquer avec precision afin qu'on puisse vous donner une reponse complete" class="form-control"></textarea>
+            </div>
+            <div class="col-md-12 col-lg-12 col-sm-12">
+                <p class="form-text form-montserra">Dû à un nombre important de demandes, nous ne traiterons pas les messages concernant les inscriptions à KDA, inscrivez-vous à l’aide du formulaire.</p>
+                <p class="form-text form-montserra">Pour toute demande de devis, merci de nous donner le maximum de détails possible afin de nous aider à vous répondre le plus précisément possible</p>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12">
+                <button type="submit" class="btn btn-md-danger border-btn-form">Envoyer</button>
+            </div>
+        </div>
+    </form>
+    </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-6">
+                    
+                    <address>
+                        <strong class="address-title">Kinshasa Digital</strong><br>
+                        <div class="address-content">
+                        Texaf Digital Campus<br>
+                        Concession COTEX (Référence: en face de l’Ambassade <br>de France)
+                        N° 63 Avenue Colonel Mondjiba<br>
+                        Commune de Ngaliema - Kinshasa<br>
+                        République Démocratique du Congo
+                        </div>
+                    </address>
+                    <div class="address-virtual mt-3">
+                        <p><a href="mailto:info@kinshasadigital.com">info@kinshasadigital.com</a></p>
+                        <p> <a href="tel:+243891 341 236">+243891 341 236</a></p>
+                    </div>
+
+                    <div class="contact-social-links mt-3">
+                        <ul>
+                            <li><a href="http://"><img src="images/Fichiers_svg" alt="facebook"></a></li>
+                            <li><a href="http://"><img src="images/Fichiers_svg" alt="twitter"></a></li>
+                            <li><a href="http://"><img src="images/Fichiers_svg" alt="linkidin"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 footer-newsletter">
+                   <div class="footer-newsletters">
+                    <p>Inscrivez-vous à notre <strong class="font-montserra-bold"> newsletter</strong> pour vous tenir au courant de nos activités.</p>
+                   <form action="" method="post" class="mt-1 footer-form">
+                       <input type="text" name="" id="" class="footer-form-control">
+                       <button type="submit" class="footer-btn">s'inscrire</button>
+                   </form>
+                 </div>
+                 <h6><a href="https://www.kinshasadigital.com/mentions-legales" class="footer-cgi">Mentions Légales</a></h6>
+                   
+                </div>
+            </div>
+        </div>
+    </footer>
     <!---_________________________Footer__________________________-->
 </body>
 </html>
