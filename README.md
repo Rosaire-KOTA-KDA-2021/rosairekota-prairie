@@ -10,5 +10,7 @@ L'objectif est de **reproduire fidèlement** le site de **Kinshasa Digital (KD)*
 - Reproduire le site KDA avec précision  
 
 ## 📌 Technologies utilisées  
-(Indique ici les langages et frameworks utilisés, par exemple : `HTML`, `CSS`, `JavaScript`, etc.)  
+ `HTML`, 
+ `CSS`, 
+ `JavaScript` 
 
